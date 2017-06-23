@@ -45,3 +45,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body {
+  padding: 20px;
+  background-color:#c9e7ff
+}
+
+p { margin : 0; }
