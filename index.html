@@ -4,29 +4,38 @@
 <head>
   <meta charset="utf-8">
   <title>Restaurant Roulette</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link type="text/css" rel="stylesheet" href="reset.css">
-  <link type="text/css" rel="stylesheet" href="style.css">
+  <link type="text/css" rel="stylesheet" href="./styles/style.css">
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif" rel="stylesheet">
 </head>
 
 <body>
+  <a name="top"></a>
   <header>
-    <h1>Restaurant Roulette</h1>
+    <a href="#top" src="./assets/logo.png" alt="Logo" border="0" width="180" height="75"></a>
+    <p>An easier way to decide where to eat</p>
   </header>
   <main>
     <p><button onclick="geoFindMe()">Show my location</button></p>
     <div id="out"></div>
+    <dl>
+      <li>Name:</li>
+      <li>location:</li>
+    </dl>
+    <button type="submit" class="next">Next</button>
+    <p class="next-result"></p>
   </main>
-  <footer>
-
+  <footer class="footer">
+    <div class="footer-right">
+      <p><small>Powered by Zomato</small></p>
+      <a href="http://www.zomato.com"><small>www.zomato.com</small></a>
+    </div>
   </footer>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script> -->
-  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="./scripts/app.js"></script>
 </body>
 
 </html>

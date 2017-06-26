@@ -1,0 +1,19 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  padding: 20px;
+  background-color:#ffebff;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin : 0;
+}
+
+footer {
+  padding: 1em;
+  background-color:#ddc8dd;
+}
