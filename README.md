@@ -7,3 +7,6 @@ https://wireframe.cc/FNwsp8 - first draft
 
 Trello board:
 https://trello.com/b/m6FEISoz/restaurant-roulette
+
+Deployment Url:
+https://restaurant-roulette-30fc6.firebaseapp.com/

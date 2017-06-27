@@ -15,15 +15,14 @@
 <body>
   <a name="top"></a>
   <header>
-    <a href="#top" src="./assets/logo.png" alt="Logo" border="0" width="180" height="75"></a>
+    <h3>Restaurant Roulette</h3>
     <p>An easier way to decide where to eat</p>
   </header>
   <main>
     <p><button onclick="geoFindMe()">Show my location</button></p>
     <div id="out"></div>
     <dl>
-      <li>Name:</li>
-      <li>location:</li>
+      <div id="nameOut"></div>
     </dl>
     <button type="submit" class="next">Next</button>
     <p class="next-result"></p>
@@ -35,6 +34,7 @@
     </div>
   </footer>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./scripts/zomato.js"></script>
   <script type="text/javascript" src="./scripts/app.js"></script>
 </body>
 
