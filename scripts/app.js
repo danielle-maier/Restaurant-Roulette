@@ -2,7 +2,7 @@ function geoFindMe() {
   var output = document.getElementById("out");
 
   if (!navigator.geolocation) {
-    output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+    output.innerHTML = "<p><small>Geolocation is not supported by your browser</small></p>";
     return;
   }
 
@@ -10,10 +10,10 @@ function geoFindMe() {
     var lat = position.coords.latitude;
     var long = position.coords.longitude;
 
-    output.innerHTML = '<p>Latitude: ' + lat + '° <br>Longitude: ' + long + '°</p>';
+    output.innerHTML = "<p>You are Here:</p>";
 
     var img = new Image();
-    img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + long + "&zoom=13&size=200x200&sensor=false";
+    img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + long + "&zoom=13&size=372x200&sensor=false";
 
     output.appendChild(img);
 
@@ -42,7 +42,7 @@ function geoFindMe() {
       outputLocationData.address = randomOut.restaurant.location.address;
       outputLocationData.city = randomOut.restaurant.location.locality;
       var nameAddress = document.getElementById("nameOut");
-      nameAddress.innerHTML = "<li>Name: " + outputLocationData.name + "</li><li>Address: " + outputLocationData.address + "</li><li>Neighborhood: " + outputLocationData.city + "</li>";
+      nameAddress.innerHTML = "<span style=\"text-decoration:underline;\">You Should Try This Restaurant:</span><br><br><dl><li>Name: " + outputLocationData.name + "</li><li>Address: " + outputLocationData.address + "</li><li>Neighborhood: " + outputLocationData.city + "</li></dl>";
     });
 
   }
@@ -51,7 +51,7 @@ function geoFindMe() {
     output.innerHTML = "Unable to retrieve your location";
   }
 
-  output.innerHTML = "<p>Locating…</p>";
+  output.innerHTML = "<p><small>Locating…</small></p>";
 
   navigator.geolocation.getCurrentPosition(success, error);
 
