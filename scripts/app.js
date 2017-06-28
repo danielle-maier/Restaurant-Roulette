@@ -42,7 +42,7 @@ function geoFindMe() {
       outputLocationData.address = randomOut.restaurant.location.address;
       outputLocationData.city = randomOut.restaurant.location.locality;
       var nameAddress = document.getElementById("nameOut");
-      nameAddress.innerHTML = "<span style=\"text-decoration:underline;\">You Should Try This Restaurant:</span><br><br><dl><li>Name: " + outputLocationData.name + "</li><li>Address: " + outputLocationData.address + "</li><li>Neighborhood: " + outputLocationData.city + "</li></dl>";
+      nameAddress.innerHTML = "<span style=\"text-decoration:underline;\"><strong>You Should Try This Restaurant:</strong></span><br><dl><li>Name: " + outputLocationData.name + "</li><li>Address: " + outputLocationData.address + "</li><li>Neighborhood: " + outputLocationData.city + "</li></dl>";
     });
 
   }
