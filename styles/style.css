@@ -22,7 +22,7 @@ p {
 body>footer {
   padding: 0;
   background-color: #ddc8dd;
-  font-size: .8rem;
+  font-size: 1.1rem;
   display: flex;
   justify-content: space-between;
 }

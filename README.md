@@ -4,6 +4,9 @@ It does this by taking the users GPS location and sending it to the zomato.com
 API. The app will choose a random restaurant to display. If you the suggestion
 go and have a great time, if not hit the button and try again.  
 
+This app is built using jQuery, milligram.io css framework, Zomato's api and
+Google Maps api.
+
 
 Wireframe:
 https://wireframe.cc/FNwsp8
