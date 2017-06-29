@@ -10,10 +10,10 @@ function geoFindMe() {
     var lat = position.coords.latitude;
     var long = position.coords.longitude;
 
-    output.innerHTML = "<p>You are Here:</p>";
+    output.innerHTML = "<p><strong>You are Here:</strong></p>";
 
     var img = new Image();
-    img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + long + "&zoom=13&size=372x200&sensor=false";
+    img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + long + "&zoom=13&size=350x200&sensor=false";
 
     output.appendChild(img);
 

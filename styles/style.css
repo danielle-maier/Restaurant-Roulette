@@ -1,20 +1,17 @@
 html {
   height: 100%;
+  width: auto;
+  margin: 0;
 }
+
 body {
   min-height: 100%;
-  padding: 20px;
+  padding: 2.4rem;
   background-color:#ffebff;
-  display: flex;
-  flex-direction: column;
 }
 
 p {
   margin : 0;
-}
-
-body > header > p{
-  font-size: .8rem;
 }
 
 body > footer {
@@ -22,16 +19,9 @@ body > footer {
   background-color: #ddc8dd;
   font-size: .8rem;
   display: flex;
+  justify-content: space-between;
 }
 
-body > footer > div > div > div:nth-child(2){
-display:flex;
-justify-content: flex-end;
-text-align: right;
-}
-
-body > footer > div > div > div:nth-child(1){
-  display: flex;
-  justify-content: flex-start;
-  text-align: left;
+body > footer > div.footer-right {
+  text-align: right;
 }
