@@ -2,7 +2,7 @@ function geoFindMe() {
   var output = document.getElementById("out");
 
   if (!navigator.geolocation) {
-    output.innerHTML = "<p><small>Geolocation is not supported by your browser</small></p>";
+    output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
     return;
   }
 
@@ -12,10 +12,14 @@ function geoFindMe() {
 
     output.innerHTML = "<p><strong>You are Here:</strong></p>";
 
-    var img = new Image();
-    img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + long + "&zoom=13&size=350x200&sensor=false";
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: {
+        lat: lat,
+        lng: long
+      }
+    });
 
-    output.appendChild(img);
 
     var u = "https://developers.zomato.com/api/";
     var version = "v2.1";
@@ -41,6 +45,15 @@ function geoFindMe() {
       outputLocationData.name = randomOut.restaurant.name;
       outputLocationData.address = randomOut.restaurant.location.address;
       outputLocationData.city = randomOut.restaurant.location.locality;
+      resLat = randomOut.restaurant.location.latitude;
+      resLong = randomOut.restaurant.location.longitude;
+      var mapOutput = document.getElementById("out");
+
+      var marker = new google.maps.Marker({
+        position: {lat: parseFloat(resLat), lng: parseFloat(resLong)},
+        map: map
+      });
+
       var nameAddress = document.getElementById("nameOut");
       nameAddress.innerHTML = "<span style=\"text-decoration:underline;\"><strong>You Should Try This Restaurant:</strong></span><br><dl><li>Name: " + outputLocationData.name + "</li><li>Address: " + outputLocationData.address + "</li><li>Neighborhood: " + outputLocationData.city + "</li></dl>";
     });
