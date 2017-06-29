@@ -22,6 +22,6 @@ body>footer {
   justify-content: space-between;
 }
 
-body>footer>footer-right {
+body>footer>div.footer-right {
   text-align: right;
 }
