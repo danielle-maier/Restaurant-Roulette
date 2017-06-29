@@ -22,21 +22,21 @@ function geoFindMe() {
     var url = u + version;
     var key = "bd73bb6587237be319492bcc0dadb697";
     var zheader = {
-      Accept : "text/plain; charset=utf-8",
+      Accept: "text/plain; charset=utf-8",
       "Content-Type": "text/plain; charset=utf-8",
-      "X-Zomato-API-Key":key
+      "X-Zomato-API-Key": key
     };
 
     $.ajax({
-      url:url+"/geocode?",
-      headers:zheader,
-      data:{
-        lat:lat,
-        lon:long
+      url: url + "/geocode?",
+      headers: zheader,
+      data: {
+        lat: lat,
+        lon: long
       }
-    }).then(function(data){
+    }).then(function(data) {
       var output = data.nearby_restaurants;
-      var randomOut = output[Math.floor(Math.random()* output.length)];
+      var randomOut = output[Math.floor(Math.random() * output.length)];
       var outputLocationData = {};
       outputLocationData.name = randomOut.restaurant.name;
       outputLocationData.address = randomOut.restaurant.location.address;
@@ -51,7 +51,7 @@ function geoFindMe() {
     output.innerHTML = "Unable to retrieve your location";
   }
 
-  output.innerHTML = "<p><small>Locating…</small></p>";
+  output.innerHTML = "<img src=\"./assets/loading.gif\"/>";
 
   navigator.geolocation.getCurrentPosition(success, error);
 

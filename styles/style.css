@@ -7,14 +7,14 @@ html {
 body {
   min-height: 100%;
   padding: 2.4rem;
-  background-color:#ffebff;
+  background-color: #ffebff;
 }
 
 p {
-  margin : 0;
+  margin: 0;
 }
 
-body > footer {
+body>footer {
   padding: 0;
   background-color: #ddc8dd;
   font-size: .8rem;
@@ -22,6 +22,6 @@ body > footer {
   justify-content: space-between;
 }
 
-body > footer > div.footer-right {
+body>footer>footer-right {
   text-align: right;
 }
