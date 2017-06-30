@@ -10,6 +10,7 @@ Google Maps api.
 
 Wireframe:
 https://wireframe.cc/FNwsp8
+![Image](./assets/fd-wireframe.png)
 
 Trello board:
 https://trello.com/b/m6FEISoz/restaurant-roulette
