@@ -10,12 +10,14 @@ API. The app will choose a random restaurant to display. If you the suggestion
 go and have a great time, if not hit the button and try again.
 
 Screenshot:
-![image](./rr-screen.png)
+![image](./assets/rr-screen.png)
 
 
 ## Deployment
 
 [link](https://restaurant-roulette-30fc6.firebaseapp.com/)
+
+
 Wireframe:[link](https://wireframe.cc/FNwsp8)
 ![Image](./assets/fd-wireframe.png)
 
