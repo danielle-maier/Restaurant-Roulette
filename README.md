@@ -29,4 +29,5 @@ Screenshot:
 ## Authors
 
 * **Danielle Maier** - *Initial work* - [Danielle-Maier](https://github.com/danielle-maier)
+
 [Trello Board:](https://trello.com/b/m6FEISoz/restaurant-roulette)
