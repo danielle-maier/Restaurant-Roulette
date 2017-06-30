@@ -15,10 +15,11 @@ Screenshot:
 
 ## Deployment
 
-[link](https://restaurant-roulette-30fc6.firebaseapp.com/)
+URL:
+[link](https://restaurant-roulette-30fc6.firebaseapp.com/)https://restaurant-roulette-30fc6.firebaseapp.com/
 
 
-Wireframe:[link](https://wireframe.cc/FNwsp8)
+
 ![Image](./assets/fd-wireframe.png)
 
 
