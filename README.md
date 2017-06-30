@@ -15,9 +15,7 @@ Screenshot:
 
 ## Deployment
 
-URL:
-[link](https://restaurant-roulette-30fc6.firebaseapp.com/)https://restaurant-roulette-30fc6.firebaseapp.com/
-
+[URL:](https://restaurant-roulette-30fc6.firebaseapp.com/) - Deployment URL
 
 
 ![Image](./assets/fd-wireframe.png)
@@ -31,4 +29,4 @@ URL:
 ## Authors
 
 * **Danielle Maier** - *Initial work* - [Danielle-Maier](https://github.com/danielle-maier)
-Trello board:[link](https://trello.com/b/m6FEISoz/restaurant-roulette)
+[Trello Board:](https://trello.com/b/m6FEISoz/restaurant-roulette)
